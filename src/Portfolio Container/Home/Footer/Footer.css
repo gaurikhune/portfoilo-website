@@ -1,0 +1,212 @@
+/*.footer-container {
+    /*height: 17.8%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+
+
+
+  ------  width: 100%;
+    background-color: rgb(246, 136, 136);
+    padding: 50px 10px;
+
+}
+
+.footer-parent {
+    width: 100%;
+    height: 100px;
+    max-width: 1920px;
+
+
+
+
+
+ ------   width: 85%;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+    color: rgb(240, 243, 246);
+    padding: 1rem;
+
+}
+
+
+
+
+
+.content-background {
+    max-width: 100%;
+  -----  height: 378px;
+    background-image: url("./../../../assets/Materials/images/Software-Engineer-Job-Description.jpeg");
+    text-align: center;
+    box-shadow: 10px 11px 10px rgb(194, 190, 190);
+    margin: 10px;
+    padding: 15px;
+
+
+
+
+
+
+
+}
+
+----.footer-parent h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+----.footer-parent p {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+}
+
+
+
+@media only screen and (max-width: 1110px) {
+    .footer-parent {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 998px) {
+    .footer-parent {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-background {
+        width: 70%;
+    }
+
+    .content-background {
+        top: 50%;
+    }
+
+    .content-background {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+    }
+}*/
+.about-container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    background-color: darkgrey;
+}
+
+.know-about {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg,
+            transparent,
+            var(--color-primary),
+            transparent);
+    display: grid;
+    place-items: center;
+}
+
+.know-about-img {
+    /*  border-radius: 1rem;*/
+    overflow: hidden;
+
+    transition: var(--transition);
+    height: 400px;
+    /* background-color: crimson*/
+}
+
+/*.know-about-img:hover {
+    transform: rotate(0);
+    background-color: rgb(237, 118, 142)
+}*/
+
+.contains {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.contain {
+    background: darkslategray;
+    border: 1px soild transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.contain:hover {
+    background: transparent;
+    border-color: blueviolet;
+    cursor: default;
+}
+
+.about-icons {
+    color: darkcyan;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.contain h4 {
+    font-size: 0.95rem;
+}
+
+.contain small {
+    font-size: 0.7rem;
+    color: crimson;
+}
+
+.contain p {
+    margin: 2rem 0 2.6rem;
+    color: rgb(72, 8, 161);
+}
+
+.dark {
+    background-color: darkgrey;
+}
+
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .know-about {
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .content-about p {
+        margin: 1rem 0 1.5rem;
+    }
+}
+
+@media screen and(max-width: 600px) {
+    .know-about {
+        width: 65%;
+        margin: 0 auto 3rem;
+    }
+
+    .contains {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .content-about {
+        text-align: center;
+    }
+
+    .content-about p {
+        margin: 1.5rem 0;
+    }
+}
